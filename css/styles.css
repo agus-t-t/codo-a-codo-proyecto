@@ -1,5 +1,21 @@
+@keyframes boton-comenzar{
+    0%, 100%{
+        background: none;
+    } 
+
+    50%{
+        box-shadow: 0px 0px 13px 13px #ffffff;
+        color: #202020;
+        background-color: #ffffff;
+        border-color: #ffffff;
+        font-weight: bold;
+    }
+}
+
+
 html{
     scroll-behavior: smooth;
+    background-color: #202020;
 }
 
 *{
@@ -47,11 +63,10 @@ li{
 .navbar-links{
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 .ir-inicio{
-    width: 50%;
+    width: 90%;
 }
 
 .navbar-container a{
@@ -85,7 +100,7 @@ header{
 
 .header-info{
     display: inline-block;
-    padding-top: 35vh;
+    padding-top: 25vh;
     height: 15vh;
     width: 50%;
 }
@@ -101,23 +116,120 @@ header{
     width: 100%;
 }
 
-
 .comenzar{
-    background: none;
     border: 2px solid;
     border-radius: 10px;
     padding: 1rem;
     font-size: 1.25rem;
-    transition: all 0.75s;
     width: 30%;
     letter-spacing: 2px;
+    animation: boton-comenzar 2.5s infinite;
 }
 
-.comenzar:hover{
-    box-shadow: 0px 0px 13px 13px #ffffff;
+/*PLANETAS*/
+
+.planeta{
+    display: grid;
+    grid-template-areas: "nombre nombre"
+                            "imagen datos"
+                            "imagen descripcion"
+                            "video video";
+    padding: 3rem 0;
+}
+
+.planeta > *{
+    padding: 2rem 0;
+}
+
+.nombre-planeta{
+    grid-area: nombre;
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.imagen-planeta{
+    grid-area: imagen;
+    text-align: center;
+}
+
+.imagen-planeta img{
+    width: 50vh;
+    height: auto;
+    transition: all 0.75s;
+}
+
+.imagen-planeta img:hover{
+    transform: scale(1.25);
+}
+
+.datos-planeta{
+    grid-area: datos;
+    text-align: end;
+}
+
+.datos-planeta ul{
+    width: 100vh;
+    font-size: 1.5rem;
+}
+
+.datos-lista li, b{
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.datos-lista b{
+    font-family: 'Play', sans-serif;
+}
+
+.descripcion-planeta{
+    grid-area: descripcion;
+    text-align: justify;
+    
+}
+
+.descripcion-planeta p{
+    width: 100vh;
+    font-size: 1.25rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.video-planeta{
+    grid-area: video;
+}
+
+.ver-video{
+    border: none;
+    border-radius: 7px;
+    background-color: #0096FF;
+    display: block;
+    margin: 0 auto;
+    transition: all 1s;
+    width: 15%;
     color: #202020;
-    background-color: #ffffff;
-    border-color: #ffffff;
-    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Play', sans-serif;
+    padding: 1rem 5px;
 }
 
+.fa-play{
+    color: #202020;
+    font-size: 1.5rem;
+}
+
+.ver-video:hover{
+    width: 30%;
+}
+
+/*POPUP*/
+
+.popup-container{
+    background-color: black ;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    width: 100%;
+}

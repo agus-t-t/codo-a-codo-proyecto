@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Orbitron:wght@400;600&family=Play&family=Raleway:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/48ed82494e.js" crossorigin="anonymous"></script>
     <title>Sistema Solar</title>
 </head>
@@ -20,9 +20,6 @@
             </div>
             <div class="links-container">
                 <ul class="navbar-links">
-                    <li class="navbar-link" id="satelites">
-                        <a href="satelites.html">Satélites</a>
-                    </li>
                     <li class="navbar-link">
                         <a href="sobremi.html">Sobre mi</a>
                     </li>
@@ -37,29 +34,47 @@
     <header>
         <div class="header-info padding-izq">
             <h1 class="titulo">Sistema Solar</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse facere et sit id rerum reiciendis, omnis expedita ad eius.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam sed totam aliquid modi fuga minus qui sint dolorem perferendis temporibus!.</p>
-            
+            <p>Te propongo un viaje distinto por todos los cuerpos celestes más importantes del sistema solar mediante una página web estática</p>
             <button class="comenzar">Comenzar viaje</button>
         </div>
     </header>
 
-    <section id="sol">
-        <div class="grid-container">
-            <div class="nombre">
+    <section id="sistema solar">
 
+        <div class="container">
+            <div class="planeta" id="sol">
+                <div class="nombre-planeta">
+                    <h2>Sol</h2>
+                </div>
+                <div class="imagen-planeta imagen-sol">
+                    <img src="sol.png" alt="Sol">
+                </div>
+                <div class="datos-planeta">
+                    <ul class="datos-lista">
+                        <li><b>Diámetro:</b> 1.4 millones de kilómetros</li>
+                        <li><b>Masa:</b> 330,000 veces la masa de la Tierra</li>
+                        <li><b>Gravedad:</b> 28 veces el equivalente a la terrestre</li>
+                        <li><b>Distancia a la Tierra:</b> 149.600.000 km</li>
+                    </ul>
+                </div>
+                <div class="descripcion-planeta">
+                    <p>El Sol es una esfera casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un proceso de dinamo.
+                        Cerca de tres cuartas partes de la masa del Sol constan de hidrógeno; el resto es principalmente helio, con cantidades mucho más pequeñas de elementos,
+                        incluyendo el oxígeno, carbono, neón y hierro.</p>
+                    <p>Se formó hace aproximadamente 4600 millones de años a partir del colapso gravitacional de la materia dentro de una región de una gran nube molecular.
+                        El Sol es más o menos de edad intermedia y no ha cambiado drásticamente desde hace más de cuatro mil millones de años, y seguirá siendo bastante estable
+                        durante otros 5000 millones de años más. Sin embargo, después de que la fusión del hidrógeno en su núcleo se haya detenido, el Sol sufrirá cambios
+                        importantes y se convertirá en una gigante roja. La Tierra y otros cuerpos orbitan alrededor del Sol.</p> 
+                </div>
+                <div class="video-planeta">
+                    <button class="ver-video">Ver video <i class="fa-solid fa-play"></i></button>
+                </div>
+                <div class="popup-container" id="popup-sol">
+                    <div class="popup"></div>
+                </div>
             </div>
-            <div class="imagen">
-
-            </div>
-            <div class="info">
-
-            </div>
-            <div class="texto">
-
-            </div>
-
         </div>
+
     </section>
 </body>
 </html>
