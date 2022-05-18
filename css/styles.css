@@ -128,13 +128,16 @@ header{
 
 /*PLANETAS*/
 
+.container{
+    padding: 3rem 0;
+}
+
 .planeta{
     display: grid;
     grid-template-areas: "nombre nombre"
                             "imagen datos"
                             "imagen descripcion"
                             "video video";
-    padding: 3rem 0;
 }
 
 .planeta > *{
@@ -213,6 +216,7 @@ h2{
     font-size: 1.5rem;
     font-family: 'Play', sans-serif;
     padding: 1rem 5px;
+    cursor: pointer;
 }
 
 .fa-play{
@@ -227,9 +231,32 @@ h2{
 /*POPUP*/
 
 .popup-container{
-    background-color: black ;
+    background-color: rgba(0, 0, 0, 0.7);
     height: 100%;
-    position: absolute;
-    opacity: 0.7;
+    position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    top: 0;
+}
+
+.fa-xmark{
+    font-size: 3rem;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.fa-xmark:hover{
+    color: tomato;
+}
+
+.video{
+    border-radius: 5px;
+    width: 50%;
+    height: 65%;
 }
