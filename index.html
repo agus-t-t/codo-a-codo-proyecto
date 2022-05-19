@@ -31,52 +31,259 @@
         </div>
     </section>
 
-    <header>
+    <header id="header">
         <div class="header-info padding-izq">
             <h1 class="titulo">Sistema Solar</h1>
             <p>Te propongo un viaje distinto por todos los cuerpos celestes más importantes del sistema solar mediante una página web estática</p>
-            <button class="comenzar">Comenzar viaje</button>
+            <a href="#sistema solar">
+                <button class="comenzar">
+                    Comenzar viaje 
+                </button>
+            </a>               
         </div>
     </header>
 
     <section id="sistema solar">
-
-        <div class="container">
-            <div class="planeta" id="sol">
-                <div class="nombre-planeta">
-                    <h2>Sol</h2>
+        <div class="container-sistema">
+            <div class="container">
+                <div class="planeta" id="sol">
+                    <div class="nombre-planeta">
+                        <h2>Sol</h2>
+                    </div>
+                    <div class="imagen-planeta imagen-sol">
+                        <img src="sol.png" alt="Sol">
+                    </div>
+                    <div class="datos-planeta">
+                        <ul class="datos-lista">
+                            <li><b>Diámetro:</b> 1.400.000 km</li>
+                            <li><b>Distancia a la Tierra:</b> 149.600.000 km</li>
+                            <li><b>Temperatura:</b> 5.505 C</li>
+                        </ul>
+                    </div>
+                    <div class="descripcion-planeta">
+                        <p>El Sol es una esfera casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un proceso de dinamo.
+                            Cerca de tres cuartas partes de la masa del Sol constan de hidrógeno; el resto es principalmente helio, con cantidades mucho más pequeñas de elementos,
+                            incluyendo el oxígeno, carbono, neón y hierro.</p>
+                        <p>Se formó hace aproximadamente 4600 millones de años a partir del colapso gravitacional de la materia dentro de una región de una gran nube molecular.
+                            El Sol es más o menos de edad intermedia y no ha cambiado drásticamente desde hace más de cuatro mil millones de años, y seguirá siendo bastante estable
+                            durante otros 5000 millones de años más. Sin embargo, después de que la fusión del hidrógeno en su núcleo se haya detenido, el Sol sufrirá cambios
+                            importantes y se convertirá en una gigante roja. La Tierra y otros cuerpos orbitan alrededor del Sol.</p> 
+                    </div>
+                    <div class="video-planeta">
+                        <button class="ver-video" id="video-sol">Ver video <i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
-                <div class="imagen-planeta imagen-sol">
-                    <img src="sol.png" alt="Sol">
+            </div>
+    
+            <div class="container">
+                <div class="planeta" id="mercurio">
+                    <div class="nombre-planeta">
+                        <h2>Mercurio</h2>
+                    </div>
+                    <div class="imagen-planeta imagen-mercurio">
+                        <img src="mercurio.png" alt="Mercurio">
+                    </div>
+                    <div class="datos-planeta">
+                        <ul class="datos-lista">
+                            <li><b>Diámetro:</b> 4.879 km</li>
+                            <li><b>Satélites:</b> Ninguno</li>
+                            <li><b>Distancia a la Tierra:</b> 77.000.000 km</li>
+                            <li><b>Temperatura: 167 C</b></li>
+                            <li><b>Rotación:</b> 58 días terrestres</li>
+                            <li><b>Órbita:</b> 88 días terrestres</li>
+                        </ul>
+                    </div>
+                    <div class="descripcion-planeta">
+                        <p>Mercurio es el planeta del sistema solar más cercano al Sol y el más pequeño. Forma parte de los denominados planetas interiores y carece de satélites
+                            naturales.</p>
+                        <p>Es uno de los cuatro planetas rocosos o sólidos; es decir, tiene un cuerpo rocoso. La superficie de Mercurio, como la de la Luna, presenta
+                            numerosos impactos de meteoritos que oscilan entre unos metros hasta miles de kilómetros. En Mercurio existe el fenómeno de los amaneceres dobles, cuando el Sol sale aproximadamente dos tercios de su tamaño, se detiene, se esconde nuevamente
+                            casi exactamente por donde salió y luego vuelve a salir para continuar su recorrido por el cielo; esto solo ocurre en algunos puntos de la superficie,
+                            a 180º de longitud de estos lo que se observa es un doble anochecer.</p> 
+                    </div>
+                    <div class="video-planeta">
+                        <button class="ver-video" id="video-mercurio">Ver video <i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
-                <div class="datos-planeta">
-                    <ul class="datos-lista">
-                        <li><b>Diámetro:</b> 1.4 millones de kilómetros</li>
-                        <li><b>Masa:</b> 330,000 veces la masa de la Tierra</li>
-                        <li><b>Gravedad:</b> 28 veces el equivalente a la terrestre</li>
-                        <li><b>Distancia a la Tierra:</b> 149.600.000 km</li>
-                    </ul>
-                </div>
-                <div class="descripcion-planeta">
-                    <p>El Sol es una esfera casi perfecta de plasma, con un movimiento convectivo interno que genera un campo magnético a través de un proceso de dinamo.
-                        Cerca de tres cuartas partes de la masa del Sol constan de hidrógeno; el resto es principalmente helio, con cantidades mucho más pequeñas de elementos,
-                        incluyendo el oxígeno, carbono, neón y hierro.</p>
-                    <p>Se formó hace aproximadamente 4600 millones de años a partir del colapso gravitacional de la materia dentro de una región de una gran nube molecular.
-                        El Sol es más o menos de edad intermedia y no ha cambiado drásticamente desde hace más de cuatro mil millones de años, y seguirá siendo bastante estable
-                        durante otros 5000 millones de años más. Sin embargo, después de que la fusión del hidrógeno en su núcleo se haya detenido, el Sol sufrirá cambios
-                        importantes y se convertirá en una gigante roja. La Tierra y otros cuerpos orbitan alrededor del Sol.</p> 
-                </div>
-                <div class="video-planeta" id="prueba">
-                    <button class="ver-video">Ver video <i class="fa-solid fa-play"></i></button>
-                </div>
-                <div class="popup-container" id="popup-sol">
-                    <i class="fa-solid fa-xmark" id="prueba2"></i>
-                    <iframe class="video" src="https://www.youtube.com/embed/LkaLfbuB_6E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+    
+            <div class="container">
+                <div class="planeta" id="venus">
+                    <div class="nombre-planeta">
+                        <h2>Venus</h2>
+                    </div>
+                    <div class="imagen-planeta imagen-venus">
+                        <img src="venus.png" alt="Venus">
+                    </div>
+                    <div class="datos-planeta">
+                        <ul class="datos-lista">
+                            <li><b>Diámetro:</b> 12.103 km</li>
+                            <li><b>Satélites:</b> Ninguno</li>
+                            <li><b>Distancia a la Tierra:</b> 40.000.000 km</li>
+                            <li><b>Temperatura: 464 C</b></li>
+                            <li><b>Rotación:</b> 243 días terrestres</li>
+                            <li><b>Órbita: 225 días</b></li>
+                        </ul>
+                    </div>
+                    <div class="descripcion-planeta">
+                        <p>Venus es el segundo planeta del sistema solar en orden de proximidad al Sol y el tercero en cuanto a tamaño en orden ascendente. Al ser el segundo
+                            objeto natural más brillante después de la Luna, puede ser visto en un cielo nocturno despejado a simple vista. Se trata de un planeta interior de
+                            tipo rocoso y terrestre, llamado con frecuencia el planeta hermano de la Tierra, ya que ambos son similares en cuanto a tamaño, masa y composición,
+                            aunque totalmente diferentes en cuestiones térmicas y atmosféricas.</p>
+                        <p>Pese a situarse más lejos del Sol que Mercurio, Venus posee la atmósfera más caliente del sistema solar; esto se debe a que está principalmente compuesta
+                            por gases de efecto invernadero, como el dióxido de carbono, atrapando mucho más calor del Sol. Actualmente carece de agua líquida y sus condiciones en
+                            superficie se consideran incompatibles con la vida conocida, aunque en descubrimientos recientes se ha encontrado fosfina en su superficie nebular,
+                            una molécula que en la Tierra es generada por microbios, lo que da indicios de una posible existencia de vida. No obstante, el Instituto Goddard de
+                            Estudios Espaciales de la NASA y otros han postulado que en el pasado Venus pudo tener océanos con tanta agua como el terrestre y reunir condiciones de
+                            habitabilidad planetaria.</p> 
+                    </div>
+                    <div class="video-planeta">
+                        <button class="ver-video" id="video-venus">Ver video <i class="fa-solid fa-play"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
-        
+
+        <div class="container">
+            <div class="planeta" id="tierra">
+                <div class="nombre-planeta">
+                    <h2>Tierra</h2>
+                </div>
+                <div class="imagen-planeta imagen-tierra">
+                    <img src="tierra.png" alt="Tierra">
+                </div>
+                <div class="datos-planeta">
+                    <ul class="datos-lista">
+                        <li><b>Diámetro:</b> 12.742 km</li>
+                        <li><b>Satélites:</b> 1</li>
+                        <li><b>Temperatura:</b> 14 C</li>
+                        <li><b>Rotación:</b> 24 horas</li>
+                        <li><b>Órbita:</b> 365 días</li>
+                        </ul>
+                    </div>
+                    <div class="descripcion-planeta">
+                        <p>La Tierra es un planeta del sistema solar que gira alrededor de su estrella —el Sol— en la tercera órbita más interna. Es el más denso y el quinto mayor de
+                            los ocho planetas del sistema solar. También es el mayor de los cuatro terrestres o rocosos.</p>
+                        <p>La Tierra se formó hace aproximadamente 4550 millones de años y la vida surgió unos mil millones de años después. Es el hogar de millones de especies,
+                            incluidos los seres humanos y actualmente el único cuerpo astronómico donde se conoce la existencia de vida. La atmósfera y otras condiciones abióticas
+                            han sido alteradas significativamente por la biosfera del planeta, favoreciendo la proliferación de organismos aerobios, así como la formación de una
+                            capa de ozono que junto con el campo magnético terrestre bloquean la radiación solar dañina, permitiendo así la vida en la Tierra.</p> 
+                    </div>
+                    <div class="video-planeta">
+                        <button class="ver-video" id="video-tierra">Ver video <i class="fa-solid fa-play"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="container">
+        <div class="planeta" id="marte">
+            <div class="nombre-planeta">
+                <h2>Marte</h2>
+            </div>
+            <div class="imagen-planeta imagen-marte">
+                <img src="marte.png" alt="Marte">
+            </div>
+            <div class="datos-planeta">
+                <ul class="datos-lista">
+                    <li><b>Diámetro:</b> 6.794 km</li>
+                    <li><b>Satélites:</b> 2</li>
+                    <li><b>Temperatura:</b> -46 C</li>
+                    <li><b>Rotación:</b> 25 horas</li>
+                    <li><b>Órbita:</b> 687 días</li>
+                </ul>
+            </div>
+            <div class="descripcion-planeta">
+                <p>Marte es el cuarto planeta en orden de distancia al Sol y el segundo más pequeño del sistema solar, después de Mercurio. Es conocido como "el planeta rojo"
+                    debido a la apariencia rojiza que le confiere el óxido de hierro predominante en su superficie. Marte es el planeta interior más alejado del Sol.
+                    Es un planeta telúrico con una atmósfera delgada de dióxido de carbono, y tiene dos satélites pequeños y de forma irregular, Fobos y Deimos, que podrían
+                    ser asteroides capturados. Sus características superficiales recuerdan tanto a los cráteres de la Luna como a los valles, desiertos y casquetes polares de la
+                    Tierra.</p>
+                <p>Las investigaciones en curso evalúan su habitabilidad potencial en el pasado, así como la posibilidad de existencia actual de vida.
+                   El agua en estado líquido no puede existir en la superficie de Marte debido a su baja presión atmosférica, que es unas 100 veces inferior a la de la Tierra,
+                   excepto en las zonas menos elevadas durante cortos periodos de tiempo. Sus dos casquetes polares parecen estar formados en su mayor parte por agua.</p> 
+            </div>
+            <div class="video-planeta">
+                <button class="ver-video" id="video-marte">Ver video <i class="fa-solid fa-play"></i></button>
+            </div>
+         </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="planeta" id="jupiter">
+            <div class="nombre-planeta">
+                <h2>Jupiter</h2>
+            </div>
+            <div class="imagen-planeta imagen-jupiter">
+                <img src="jupiter.png" alt="Jupiter">
+            </div>
+            <div class="datos-planeta">
+                <ul class="datos-lista">
+                    <li><b>Diámetro:</b> 142.984 km</li>
+                    <li><b>Satélites:</b> 63</li>
+                    <li><b>Temperatura:</b> -121,15 C</li>
+                    <li><b>Rotación:</b> 10 horas</li>
+                    <li><b>Órbita:</b> 11 años y 314 días</li>
+                </ul>
+            </div>
+            <div class="descripcion-planeta">
+                <p>Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol. Es un gigante gaseoso que forma parte de los denominados
+                    planetas exteriores. Es uno de los objetos naturales más brillantes en un cielo nocturno despejado.</p>
+                <p>Tiene una masa casi dos veces y media de la de los demás planetas juntos (con una masa 318 veces mayor que la de la Tierra y tres veces mayor que la de
+                    Saturno, además de ser, en cuanto a volumen, 1321 veces más grande que la Tierra). También es el planeta más antiguo del sistema solar, siendo incluso más
+                    antiguo que el Sol.</p>
+                <p>Júpiter es un cuerpo masivo gaseoso, formado principalmente por hidrógeno y helio, carente de una superficie interior definida. Entre los detalles}
+                    atmosféricos es notable la Gran Mancha Roja (un enorme anticiclón situado en las latitudes tropicales del hemisferio sur), la estructura de nubes en bandas
+                    oscuras y zonas brillantes, y la dinámica atmosférica global determinada por intensos vientos zonales alternantes en latitud y con velocidades de hasta
+                    140 m/s (504 km/h).</p>
+            </div>
+            <div class="video-planeta">
+                <button class="ver-video" id="video-jupiter">Ver video <i class="fa-solid fa-play"></i></button>
+            </div>
+         </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="planeta" id="saturno">
+            <div class="nombre-planeta">
+                <h2>Saturno</h2>
+            </div>
+            <div class="imagen-planeta imagen-saturno">
+                <img src="saturno.png" alt="Saturno">
+            </div>
+            <div class="datos-planeta">
+                <ul class="datos-lista">
+                    <li><b>Diámetro:</b> 142.984 km</li>
+                    <li><b>Satélites:</b> 63</li>
+                    <li><b>Temperatura:</b> -121,15 C</li>
+                    <li><b>Rotación:</b> 10 horas</li>
+                    <li><b>Órbita:</b> 11 años y 314 días</li>
+                </ul>
+            </div>
+            <div class="descripcion-planeta">
+                <p>Júpiter es el planeta más grande del sistema solar y el quinto en orden de lejanía al Sol. Es un gigante gaseoso que forma parte de los denominados
+                    planetas exteriores. Es uno de los objetos naturales más brillantes en un cielo nocturno despejado.</p>
+                <p>Tiene una masa casi dos veces y media de la de los demás planetas juntos (con una masa 318 veces mayor que la de la Tierra y tres veces mayor que la de
+                    Saturno, además de ser, en cuanto a volumen, 1321 veces más grande que la Tierra). También es el planeta más antiguo del sistema solar, siendo incluso más
+                    antiguo que el Sol.</p>
+                <p>Júpiter es un cuerpo masivo gaseoso, formado principalmente por hidrógeno y helio, carente de una superficie interior definida. Entre los detalles}
+                    atmosféricos es notable la Gran Mancha Roja (un enorme anticiclón situado en las latitudes tropicales del hemisferio sur), la estructura de nubes en bandas
+                    oscuras y zonas brillantes, y la dinámica atmosférica global determinada por intensos vientos zonales alternantes en latitud y con velocidades de hasta
+                    140 m/s (504 km/h).</p>
+            </div>
+            <div class="video-planeta">
+                <button class="ver-video" id="video-jupiter">Ver video <i class="fa-solid fa-play"></i></button>
+            </div>
+         </div>
+        </div>
+    </div>
     </section>
+
+    <div class="popup-container" id="popup">
+        <i class="fa-solid fa-xmark" id="cerrar"></i>
+    </div>
     
     <script src="index.js"></script>
 </body>

@@ -50,10 +50,12 @@ li{
     width: 100%;
     font-size: 1.5rem;
     padding: 0.5rem;
+    z-index: 999;
 }
 
 .navbar-container{
     display: flex;
+    
 }
 
 .links-container{
@@ -124,12 +126,18 @@ header{
     width: 30%;
     letter-spacing: 2px;
     animation: boton-comenzar 2.5s infinite;
+    cursor: pointer;
 }
 
 /*PLANETAS*/
 
+.container-sistema{
+    margin-top: 5rem;
+}
+
 .container{
-    padding: 3rem 0;
+    height: 100vh;
+    margin: 1rem 0;
 }
 
 .planeta{
@@ -138,10 +146,11 @@ header{
                             "imagen datos"
                             "imagen descripcion"
                             "video video";
+    grid-gap: 1rem;
 }
 
 .planeta > *{
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .nombre-planeta{
@@ -191,13 +200,13 @@ h2{
 .descripcion-planeta{
     grid-area: descripcion;
     text-align: justify;
-    
 }
 
 .descripcion-planeta p{
     width: 100vh;
     font-size: 1.25rem;
     font-family: 'Raleway', sans-serif;
+    margin: 0.75rem 0;
 }
 
 .video-planeta{
@@ -256,6 +265,9 @@ h2{
 }
 
 .video{
+    position: fixed;
+    top: 17.5%;
+    left: 25%;
     border-radius: 5px;
     width: 50%;
     height: 65%;
